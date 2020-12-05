@@ -1,0 +1,20 @@
+/* components/SerchInput/SerchInput.wxss */
+
+.serch_input{
+    background-color: var(--themeColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90rpx;
+    padding: 10rpx;
+}
+
+.nav_serch{
+
+    font-size: 28rpx;
+    text-align: center;
+    text-justify: inter-cluster;
+    height: 100%;
+    background-color: #fff;
+    width: 700rpx;
+}

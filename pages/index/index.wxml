@@ -1,2 +1,10 @@
 <!--index.wxml-->
-<view>首页</view>
+
+<view class="pyg_index">
+    <!-- 搜索栏开始 -->
+    <SerchInput></SerchInput>
+    <!-- 搜索栏结束 -->
+
+
+
+</view>

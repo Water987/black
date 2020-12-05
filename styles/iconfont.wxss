@@ -32,7 +32,7 @@
   }
   
   .icon-shou_cang:before {
-    content: "\e614";
+    content: "\e614"; 
   }
   
   .icon-gouwuche:before {

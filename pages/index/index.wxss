@@ -1,1 +1,5 @@
 /**index.wxss**/
+page{
+  /* color: var(--themeColor); */
+  
+}
