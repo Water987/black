@@ -4,7 +4,47 @@
     <!-- 搜索栏开始 -->
     <SerchInput></SerchInput>
     <!-- 搜索栏结束 -->
+    
+    <!-- 轮播图开始 -->
+        <!-- swiper image 存在默认样式 -->
+    <view >
+        <swiper class="swiperBox" autoplay circular indicator-dots indicator-color="rgba(255, 255, 255)">
+            <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+                <image mode="widthFix" src="{{item.image_src}}" />
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 轮播图结束 -->
 
+    <!-- 首页分类导航 开始 -->
+    <view class="cateBox" hover-class="none" hover-stop-propagation="false">
+        <navigator wx:for="{{cateList}}" wx:key="index" >
+            <image class="" src="{{item.image_src}}" mode="widthFix" >
+                
+            </image>
+        </navigator>
+    </view>
+    <!-- 首页分类导航 结束 -->
+
+    <!-- 首页楼层 开始 -->
+    <view wx:for="{{floorList}}" wx:key="name" 
+            wx:for-index="index1" wx:for-item="item1">
+        <!-- title -->
+        <view class="floorTitle">
+            <navigator  >
+                <image  mode="widthFix" src="{{item1.floor_title.image_src}}"/>
+            </navigator>
+        </view>
+        
+        <!-- list -->
+        <view class="floorList" >
+            <navigator wx:for="{{item1.product_list}}" wx:key="name">
+                <image src="{{item.image_src}}" mode="{{index===0? 'widthFix':'scaleToFill'}}" />
+            </navigator>
+        </view>
+        
+    </view>  
+    <!-- 首页楼层 结束 -->
 
 
 </view>

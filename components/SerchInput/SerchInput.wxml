@@ -1,5 +1,5 @@
 <!--components/SerchInput/SerchInput.wxml-->
 <!-- <text>components/SerchInput/SerchInput.wxml</text> -->
-<view class="serch_input">
-    <navigator >搜索</navigator>
-</view>
+<view class="search_input">
+    <navigator class="nav_search" url="/pages/search/index" open-type="navigate">搜索</navigator>
+</view> 
